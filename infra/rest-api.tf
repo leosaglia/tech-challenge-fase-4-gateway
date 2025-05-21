@@ -1,7 +1,3 @@
-data "aws_cognito_user_pool" "user_pool" {
-  user_pool_id = "us-east-1_XajoTevCM"
-}
-
 data "template_file" "api_template" {
   template = file("${path.module}/openapi/fast-food-tech-challenge-definition.json")
 
